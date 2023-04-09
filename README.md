@@ -1,9 +1,8 @@
 # :wave: PROGRAMACION III: TAREA 1A
 
-- Apellidos: *Completar*
-- Nombres: *Completar*
-- Sección: *Completar*
-
+- Apellidos: Mendoza Alva
+- Nombres: Hans Alfonso
+- Sección: Teoria: 1   Laboratorio: 1.01
 En la presente tarea usted debe **modificar/completar** los archivos dentro de la carpeta <tt>tarea</tt>.
 
 ## Requerimientos
