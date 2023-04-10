@@ -85,6 +85,7 @@ Matriz2D t(Matriz2D& m){
             r.ptr[i][j]=m.ptr[j][i];
       }
   }
+    return r;
 }
 
 std::ostream& operator<<(std::ostream& os, const Matriz2D& m){
