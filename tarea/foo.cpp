@@ -6,11 +6,12 @@ Matriz2D::Matriz2D(){
   filas=3;
   columnas=3;
   ptr=new float*[3];
-  for(int i=0; i<3;i++)
-    ptr[i]=new float[3];
+  for(int i=0; i<3;i++){
+      ptr[i]=new float[3];
+  }
   for (int i = 0; i < filas; ++i) {
       for (int j = 0; j < columnas; ++j) {
-          ptr[i][j]=static_cast <float> (rand())/static_cast<float>(RAND_MAX);
+          ptr[i][j]=(float)(1+rand()%100)/100 ;
       }
   }
 }
@@ -24,7 +25,7 @@ Matriz2D::Matriz2D(int n){
     ptr[i]=new float[columnas];
   for (int i = 0; i < filas; ++i) {
       for (int j = 0; j < columnas; ++j) {
-          ptr[i][j]=static_cast <float> (rand())/static_cast<float>(RAND_MAX);
+          ptr[i][j]=(float)(1+rand()%100)/100;
       }
   }
 }
@@ -38,7 +39,7 @@ Matriz2D::Matriz2D(int n, int m){
     ptr[i]=new float[columnas];
   for (int i = 0; i < filas; ++i) {
       for (int j = 0; j < columnas; ++j) {
-          ptr[i][j]=static_cast <float> (rand())/static_cast<float>(RAND_MAX);
+          ptr[i][j]=(float)(1+rand()%100)/100;
       }
   }
 }
@@ -85,7 +86,7 @@ Matriz2D t(Matriz2D& m){
             r.ptr[i][j]=m.ptr[j][i];
       }
   }
-    return r;
+  return r;
 }
 
 std::ostream& operator<<(std::ostream& os, const Matriz2D& m){
